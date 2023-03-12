@@ -1,9 +1,16 @@
-<h1>Kitchen Car</h1>
-<p>キッチンカー専用勤怠管理アプリ</p>
+<div class="description">
+  <h5>KCarシフトとは</h5>
+  <p></p>
+</div>
 
-<h3>オーナー</h3>
-<%= link_to 'ログイン', new_owner_session_path %>
-<%= link_to '新規登録', new_owner_registration_path %>
-<h3>従業員・アルバイト</h3>
-<%= link_to 'ログイン', new_employee_session_path %>
-<%= link_to '新規登録', new_employee_registration_path %>
+<div class="login-new">
+  <h5>オーナーの方</h5>
+  <%= link_to 'ログイン', new_owner_session_path, class: 'btn btn-primary' %>
+  <%= link_to '新規登録', new_owner_registration_path, class: 'btn btn-primary' %>
+</div>
+
+<div class="login-new">
+  <h5>従業員・アルバイトの方</h5>
+  <%= link_to 'ログイン', new_employee_session_path, class: 'btn btn-primary' %>
+  <%= link_to '新規登録', new_employee_registration_path, class: 'btn btn-primary' %>
+</div>

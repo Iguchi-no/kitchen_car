@@ -1,0 +1,29 @@
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+
+/* universal */
+
+// header==================================
+header {
+  width: 300px;
+  text-align: center;
+}
+// ========================================
+
+body {
+  width: 300px;
+}
+
+.container {
+  // width: 200px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 12px;
+  width: 80px;
+}
+
+.login-new {
+  text-align: center;
+}
