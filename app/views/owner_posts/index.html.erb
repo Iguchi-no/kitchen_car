@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Owner posts</h1>
+
+<div id="owner_posts">
+  <% @owner_posts.each do |owner_post| %>
+    <%= render owner_post %>
+    <p>
+      <%= link_to "Show this owner post", owner_post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New owner post", new_owner_post_path %>

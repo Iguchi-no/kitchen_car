@@ -1,0 +1,42 @@
+<%= form_with(model: owner_post) do |form| %>
+  <% if owner_post.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(owner_post.errors.count, "error") %> prohibited this owner_post from being saved:</h2>
+
+      <ul>
+        <% owner_post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :place, style: "display: block" %>
+    <%= form.text_field :place %>
+  </div>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.date_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :start_time, style: "display: block" %>
+    <%= form.time_field :start_time %>
+  </div>
+
+  <div>
+    <%= form.label :end_time, style: "display: block" %>
+    <%= form.time_field :end_time %>
+  </div>
+
+  <div>
+    <%= form.label :memo, style: "display: block" %>
+    <%= form.text_field :memo %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

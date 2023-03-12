@@ -1,0 +1,2 @@
+class OwnerPost < ApplicationRecord
+end

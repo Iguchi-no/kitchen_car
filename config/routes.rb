@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :owner_posts
   devise_for :cars
   devise_for :employees
   devise_for :owners
